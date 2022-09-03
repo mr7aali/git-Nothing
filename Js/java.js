@@ -40,8 +40,8 @@ const displayNews = (newses)=>{
         const newDiv = document.createElement('div');
         
     
-  if(news.details.length > 50){
-    var sliceNews =  news.details.slice(0,50) +'....';
+  if(news.details.length > 100){
+    var sliceNews =  news.details.slice(0,100) +'....';
     console.log(sliceNews)
   }
   else{
