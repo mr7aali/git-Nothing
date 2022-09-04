@@ -41,8 +41,8 @@ const displayNews = (newses)=>{
         
     
   if(news.details.length > 100){
-    var sliceNews =  news.details.slice(0,100) +'....';
-    console.log(sliceNews)
+    news.details =  (news.details.slice(0,500))  ;
+    //console.log(sliceNews)
   }
   else{
      sliceNews = news.details;
@@ -57,7 +57,7 @@ const displayNews = (newses)=>{
 
         <div class="Blog">
            <h1>${news.title}</h1>
-           <p>${sliceNews}</p>
+           <p>${news.details} .....</p>
 
            <div class="blog-details">                    
                     <span><div class="author-img"> <img src="" alt="">  </div><span>Name</span></span>
